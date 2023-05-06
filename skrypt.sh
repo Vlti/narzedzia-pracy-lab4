@@ -9,6 +9,9 @@ elif [[ "$1" == "--logs" ]] || [[ "$1" == "-l" ]]; then
 		echo "$0" >> $filename
 		echo "$(date)" >> $filename
 	done
+elif [[ "$1" == "--init" ]]; then
+	$(git + clone + https://github.com/Vlti/narzedzia-pracy-lab4)
+	set PATH=%PATH;$pwd\narzedzia-pracy-lab4\
 elif [[ "$1" == "--help" ]] || [[ "$1" == "-h" ]]; then
 	echo "usage: skrypt.sh [OPTION] [NUMBER]"
 	echo "-d, --date		Prints out current date"
