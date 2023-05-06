@@ -11,8 +11,8 @@ elif [[ "$1" == "--logs" ]] || [[ "$1" == "-l" ]]; then
 	done
 elif [[ "$1" == "--help" ]] || [[ "$1" == "-h" ]]; then
 	echo "usage: skrypt.sh [OPTION] [NUMBER]"
-	echo "--date		Prints out current date"
-	echo "--logs [N]	Creates N files named logx.txt, where x is a number from 1 to N"
+	echo "-d, --date		Prints out current date"
+	echo "-l, --logs [N]	Creates N files named logx.txt, where x is a number from 1 to N"
 else
 	echo "Error!"
 fi
