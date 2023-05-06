@@ -21,6 +21,8 @@ elif [[ "$1" == "--help" ]] || [[ "$1" == "-h" ]]; then
 	echo "usage: skrypt.sh [OPTION] [NUMBER]"
 	echo "-d, --date		Prints out current date"
 	echo "-l, --logs [N]	Creates N files named logx.txt, where x is a number from 1 to N"
+	echo "--init		Clones repo to working directory and adds to PATH"
+	echo "-e, --error [N]	Creates N files named errorx.txt in errorx directory, where x is a number from 1 to N"
 else
 	echo "Error!"
 fi
